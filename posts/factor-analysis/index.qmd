@@ -20,7 +20,9 @@ Gana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan.
 
 Package [`piecewiseSEM`](https://jslefche.github.io/piecewiseSEM/) [Book](https://jslefche.github.io/sem_book/index.html)
 
-Package [`lavaangui`](https://github.com/karchjd/lavaangui) giúp vẽ sơ đồ SEM [Paper](https://www.tandfonline.com/doi/full/10.1080/10705511.2024.2420678) 
+Package [`lavaangui`](https://github.com/karchjd/lavaangui) giúp vẽ sơ đồ SEM [Paper](https://www.tandfonline.com/doi/full/10.1080/10705511.2024.2420678)
+
+Package [`lavaan`](https://lavaan.ugent.be/resources/books.html)
 
 
 
