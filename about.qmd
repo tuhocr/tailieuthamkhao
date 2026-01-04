@@ -1,0 +1,19 @@
+---
+title: "Duc Nguyen"
+image: ducnguyen.jpg
+about:
+  template: jolla
+  links:
+    - icon: check-circle-fill
+      text: Class
+      href: https://class.tuhocr.com/
+    - icon: facebook
+      text: Facebook
+      href: https://www.facebook.com/Huong.Dan.Tu.Hoc.R
+    - icon: github
+      text: Github
+      href: https://github.com/tuhocr
+
+---
+
+Mến chào bạn, mình là Duc Nguyen, chuyên đào tạo kỹ năng R để xử lý dữ liệu. Mình biên soạn trang blog này để tập hợp tài liệu tham khảo về chủ đề xác suất thống kê, các mô hình hồi quy, hay các tài liệu hữu ích phục vụ [Tự Học R](https://class.tuhocr.com/khoa-hoc/). Các bạn quan tâm có thể đăng ký học để truy cập vào [Thư viện Tự Học R](https://www.thuviencanhan.com/tuhocr) nhé. Cảm ơn các bạn rất nhiều.

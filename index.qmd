@@ -1,0 +1,27 @@
+---
+# title: "Tài liệu tham khảo"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: table
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [image,
+            # date, 
+            title, 
+            # subtitle,
+            # description,
+            # filename,
+            # file-modified,
+            # author,
+            # reading-time, 
+            categories
+            # excerpt
+            ]
+page-layout: full
+title-block-banner: false
+editor_options: 
+  chunk_output_type: console
+---
+
