@@ -4,14 +4,7 @@
     "href": "index.html",
     "title": "Tài liệu tham khảo",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nTitle\n\n\nCategories\n\n\n\n\n\n\n\n\n\nTổng hợp tài liệu factor analysis\n\n\nfactor analysis, EFA, CFA, SEM\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/factor-analysis/index.html",
-    "href": "posts/factor-analysis/index.html",
-    "title": "Tổng hợp tài liệu factor analysis",
-    "section": "",
-    "text": "Watkins, Marley W. 2021. A Step-by-Step Guide to Exploratory Factor Analysis with R and RStudio. Routledge. (Watkins 2021)\nBrown, Timothy A. 2015. Confirmatory Factor Analysis for Applied Research. 2nd ed. Guilford Press. (Brown 2015)\nGana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan. Willey. (Gana and Broc 2019)\nPackage piecewiseSEM Book\nPackage lavaangui giúp vẽ sơ đồ SEM Paper\nPackage lavaan\n\n\n\n\nReferences\n\nBrown, Timothy A. 2015. Confirmatory Factor Analysis for Applied Research. 2nd ed. Guilford Press. http://book.thuviencanhan.com/ref/factor_analysis/brown_confirmatory_2015.pdf.\n\n\nGana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan. Willey. http://book.thuviencanhan.com/ref/factor_analysis/broc_sem_lavaan_2019.pdf.\n\n\nWatkins, Marley W. 2021. A Step-by-Step Guide to Exploratory Factor Analysis with R and RStudio. Routledge. http://book.thuviencanhan.com/ref/factor_analysis/watkins_efa_2021.pdf."
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nCategories\n\n\n\n\n\n\nExample 1 | SEM\n\n\nSEM, example\n\n\n\n\nTổng hợp bài tập factor analysis\n\n\nfactor analysis, EFA, CFA, SEM\n\n\n\n\nHướng dẫn tải bài báo\n\n\ndownload\n\n\n\n\nTổng hợp tài liệu factor analysis\n\n\nfactor analysis, EFA, CFA, SEM\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -19,5 +12,40 @@
     "title": "Duc Nguyen",
     "section": "",
     "text": "Mến chào bạn, mình là Duc Nguyen, chuyên đào tạo kỹ năng R để xử lý dữ liệu. Mình biên soạn trang blog này để tập hợp tài liệu tham khảo về chủ đề xác suất thống kê, các mô hình hồi quy, hay các tài liệu hữu ích. Các bạn quan tâm có thể đăng ký học ở Tự Học R để truy cập vào Thư viện Tự Học R nhé. Cảm ơn các bạn rất nhiều."
+  },
+  {
+    "objectID": "posts/download-article/index.html",
+    "href": "posts/download-article/index.html",
+    "title": "Hướng dẫn tải bài báo",
+    "section": "",
+    "text": "https://annas-archive.in/\nhttps://annas-archive.li/\nhttps://annas-archive.se/\nhttps://annas-archive.pm/"
+  },
+  {
+    "objectID": "posts/factor-analysis-example/example_1/example_1.html",
+    "href": "posts/factor-analysis-example/example_1/example_1.html",
+    "title": "Example 1 | SEM",
+    "section": "",
+    "text": "Nội dung này được tham khảo ở phần 2.6 Model Fitting Using lavaan"
+  },
+  {
+    "objectID": "posts/factor-analysis-example/example_1/example_1.html#phân-tích-theo-kiểu-sem",
+    "href": "posts/factor-analysis-example/example_1/example_1.html#phân-tích-theo-kiểu-sem",
+    "title": "Example 1 | SEM",
+    "section": "2.1 Phân tích theo kiểu SEM",
+    "text": "2.1 Phân tích theo kiểu SEM\nBản chất mối quan hệ này, ta có thể phân tích theo kiểu hồi quy tuyến tính để tìm ra tác động của biến age với biến firesev, và đó cũng là một mô hình SEM (về cơ bản SEM là mô hình hồi quy tuyến tính).\nThe package to fit the SEM using covariance-based methods is called lavaan (for LAtent VAriable ANalysis, which we will delve into in a later chapter).\n\nkeeley_formula1 &lt;- 'firesev ~ age'\n\nclass(keeley_formula1)\n\n[1] \"character\"\n\n\n\nkeeley_sem1 &lt;- sem(keeley_formula1, \n                   data = keeley)\n\nsummary(keeley_sem1)\n\nlavaan 0.6-20 ended normally after 1 iteration\n\n  Estimator                                         ML\n  Optimization method                           NLMINB\n  Number of model parameters                         2\n\n  Number of observations                            90\n\nModel Test User Model:\n                                                      \n  Test statistic                                 0.000\n  Degrees of freedom                                 0\n\nParameter Estimates:\n\n  Standard errors                             Standard\n  Information                                 Expected\n  Information saturated (h1) model          Structured\n\nRegressions:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n  firesev ~                                           \n    age               0.060    0.012    4.832    0.000\n\nVariances:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n   .firesev           2.144    0.320    6.708    0.000"
+  },
+  {
+    "objectID": "posts/factor-analysis-example/index.html",
+    "href": "posts/factor-analysis-example/index.html",
+    "title": "Tổng hợp bài tập factor analysis",
+    "section": "",
+    "text": "1 Các bài tập mẫu\nExample 1\n\n\n2 Một số định nghĩa\nBiến nội sinh (Endogenous variable) là biến phụ thuộc vào các biến số khác trong cùng một phương trình hồi quy. Do đó biến nội sinh còn gọi là biến phụ thuộc (Dependent variable - DV).\nBiến ngoại sinh (Exogenous variable) là biến không phụ thuộc vào các biến số trong cùng một phương trình hồi quy. Do đó biến ngoại sinh còn gọi là biến độc lập (Independent variables - IV).\nNếu chạy trực tiếp trên raw data, ta thu được các hệ số hồi quy unstandardized regression coefficients.\nNếu scale/standardize raw data, ta thu được các hệ số hồi quy standardized regression coefficients.\nPhân tích về mô hình bão hòa/saturated\nhttps://stats.oarc.ucla.edu/stata/faq/what-are-the-saturated-and-baseline-models-in-sem/\n\n\n3 Quy tắc ký hiệu"
+  },
+  {
+    "objectID": "posts/factor-analysis/index.html",
+    "href": "posts/factor-analysis/index.html",
+    "title": "Tổng hợp tài liệu factor analysis",
+    "section": "",
+    "text": "Watkins, Marley W. 2021. A Step-by-Step Guide to Exploratory Factor Analysis with R and RStudio. Routledge. (Watkins 2021)\nBrown, Timothy A. 2015. Confirmatory Factor Analysis for Applied Research. 2nd ed. Guilford Press. (Brown 2015)\nGana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan. Willey. (Gana and Broc 2019)\nPackage piecewiseSEM Book\nPackage lavaangui giúp vẽ sơ đồ SEM Paper\nPackage lavaan\n\n\n\n\nReferences\n\nBrown, Timothy A. 2015. Confirmatory Factor Analysis for Applied Research. 2nd ed. Guilford Press. http://book.thuviencanhan.com/ref/factor_analysis/brown_confirmatory_2015.pdf.\n\n\nGana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan. Willey. http://book.thuviencanhan.com/ref/factor_analysis/broc_sem_lavaan_2019.pdf.\n\n\nWatkins, Marley W. 2021. A Step-by-Step Guide to Exploratory Factor Analysis with R and RStudio. Routledge. http://book.thuviencanhan.com/ref/factor_analysis/watkins_efa_2021.pdf."
   }
 ]

@@ -1,0 +1,138 @@
+---
+title: Example 1 | SEM
+author: Duc Nguyen
+date: last-modified
+format:
+  html:
+    toc: true
+    toc-title: "Mục lục"
+    toc-expand: 8
+    toc-depth: 6
+    toc-location: left
+    code-fold: false
+    code-summary: "Show the code"
+    number-sections: true
+    number-depth: 8
+    page-layout: full
+    embed-resources: false
+    anchor-sections: true
+    smooth-scroll: true
+engine: knitr
+knitr:
+  opts_chunk:
+    R.options:
+      width: 120
+editor_options: 
+  chunk_output_type: console
+lightbox: true
+categories: [SEM, example]
+
+---
+
+```{r, echo=FALSE, results='hide'}
+knitr::opts_chunk$set(message = FALSE,  
+                      warning = FALSE)   
+```
+
+Nội dung này được tham khảo ở phần [2.6 Model Fitting Using `lavaan`](https://jslefche.github.io/sem_book/global-estimation.html#model-fitting-using-lavaan)
+
+# Import dataset
+
+```{r}
+library(lavaan)
+library(piecewiseSEM)
+
+data(keeley)
+
+head(keeley)
+```
+
+Dữ liệu này gồm 90 observations of 8 variables. [Paper](http://book.thuviencanhan.com/ref/factor_analysis/keeley_2006.pdf)
+
+Nghiên cứu này khảo sát mối quan hệ giữa `rich` (độ đa dạng thực vật) với các yếu tố khác như `distance` (khoảng cách từ khu rừng đến bờ biển), `elev` (độ cao so với mực nước biển), ... trong chủ đề kiểm soát cháy rừng ở California.
+
+`distance`: Distance to coast
+
+`elev`: Elevation from sea level
+
+`abiotic`: Abiotic favorability
+
+`age`: Age of stand before fire
+
+`hetero`: Plot heterogeneity
+
+`firesev`: Severity of fire
+
+`cover`: Cover of plants
+
+`rich`: Plant species richness
+
+# So sánh kết quả giữa chạy SEM bằng `lavaan` và linear regression
+
+Đầu tiên, ta khảo sát mối quan hệ giữa `age` độ tuổi của thực vật với `firesev` mức độ dễ cháy. Dễ nhìn ra, cây có độ tuổi càng cao thì thân và vỏ cây càng khô, dễ mục và từ đó dễ bắt lửa. Vì vậy biến `X = age`, biến `Y = firesev`.
+
+Ta mô tả quan hệ giữa hai biến này như sau. Chiều mũi tên, cho thấy nguyên nhân `age` tác động đến kết quả `firesev` [biến nội sinh, endogenous (response) variable].
+
+![](global_estimation_keeley_sem1.png)
+
+```{r}
+plot(firesev ~ age,
+     data = keeley,
+     las = 1,
+     main = "Mối quan hệ giữa firesev và age")
+
+fit <- lm(firesev ~ age, data = keeley)
+
+abline(fit, col = "red")
+```
+
+```{r}
+var(keeley$age)
+var(keeley$firesev)
+cov(keeley$age, keeley$firesev)
+cor(keeley$age, keeley$firesev)
+```
+
+
+## Phân tích theo kiểu SEM
+
+Bản chất mối quan hệ này, ta có thể phân tích theo kiểu hồi quy tuyến tính để tìm ra tác động của biến `age` với biến `firesev`, và đó cũng là một mô hình SEM (về cơ bản SEM là mô hình hồi quy tuyến tính).
+
+The package to fit the SEM using covariance-based methods is called `lavaan` (for LAtent VAriable ANalysis, which we will delve into in a later chapter).
+
+
+
+```{r}
+keeley_formula1 <- 'firesev ~ age'
+
+class(keeley_formula1)
+```
+
+```{r}
+keeley_sem1 <- sem(keeley_formula1, 
+                   data = keeley)
+
+summary(keeley_sem1)
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

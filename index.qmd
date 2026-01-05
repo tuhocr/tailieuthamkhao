@@ -7,7 +7,8 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [image,
+  fields: [
+  # image,
             # date, 
             title, 
             # subtitle,

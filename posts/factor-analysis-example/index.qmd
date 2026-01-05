@@ -1,0 +1,27 @@
+---
+title: "Tổng hợp bài tập factor analysis"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+categories: [factor analysis, EFA, CFA, SEM, example]
+---
+
+# Các bài tập mẫu
+
+Example 1
+
+# Một số định nghĩa
+
+**Biến nội sinh** (Endogenous variable) là biến phụ thuộc vào các biến số khác trong cùng một phương trình hồi quy. Do đó biến nội sinh còn gọi là biến phụ thuộc (Dependent variable - DV).
+
+**Biến ngoại sinh** (Exogenous variable) là biến không phụ thuộc vào các biến số trong cùng một phương trình hồi quy. Do đó biến ngoại sinh còn gọi là biến độc lập (Independent variables - IV).
+
+Nếu chạy trực tiếp trên raw data, ta thu được các hệ số hồi quy *unstandardized* regression coefficients.
+
+Nếu scale/standardize raw data, ta thu được các hệ số hồi quy *standardized* regression coefficients.
+
+Phân tích về mô hình bão hòa/saturated
+
+<https://stats.oarc.ucla.edu/stata/faq/what-are-the-saturated-and-baseline-models-in-sem/>
+
+# Quy tắc ký hiệu
