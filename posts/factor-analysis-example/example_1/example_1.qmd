@@ -1,5 +1,5 @@
 ---
-title: Example 1 | SEM
+title: Example 1 | SEM [draft]
 author: Duc Nguyen
 date: last-modified
 format:
@@ -117,7 +117,7 @@ summary(keeley_sem1)
 
 
 
-
+<https://tuanvanle.wordpress.com/2011/09/12/c%C6%A1-s%E1%BB%9F-ly-thuy%E1%BA%BFt-c%E1%BB%A7a-mo-hinh-m%E1%BA%A1ng-sem-ph%E1%BA%A7n-1/>
 
 
 

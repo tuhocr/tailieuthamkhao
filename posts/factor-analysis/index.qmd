@@ -4,9 +4,9 @@ author: "Duc Nguyen"
 date: last-modified
 lightbox: true
 categories: [factor analysis, EFA, CFA, SEM]
-image: "watkins_efa_2021.jpg"
-
 ---
+
+# Sách
 
 [![](watkins_efa_2021.jpg){ height=100px }](http://book.thuviencanhan.com/ref/factor_analysis/watkins_efa_2021.pdf) 
 [![](brown_confirmatory_2015.png){ height=100px }](http://book.thuviencanhan.com/ref/factor_analysis/brown_confirmatory_2015.pdf)
@@ -18,11 +18,21 @@ Brown, Timothy A. 2015. Confirmatory Factor Analysis for Applied Research. 2nd e
 
 Gana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan. Willey. [@broc_sem_lavaan_2019]
 
+# Tài liệu theo package
+
 Package [`piecewiseSEM`](https://jslefche.github.io/piecewiseSEM/) [Book](https://jslefche.github.io/sem_book/index.html)
 
 Package [`lavaangui`](https://github.com/karchjd/lavaangui) giúp vẽ sơ đồ SEM [Paper](https://www.tandfonline.com/doi/full/10.1080/10705511.2024.2420678)
 
 Package [`lavaan`](https://lavaan.ugent.be/resources/books.html)
+
+# Video
+
+* SEM, CFA, EFA, mediation model <https://www.youtube.com/playlist?list=PLzv58M2GAfm4CF5-7GGDYStx9SzyhFmgK>
+
+* Multilevel models: Random coefficient and intercept models  <https://www.youtube.com/playlist?list=PLzv58M2GAfm4CF5-7GGDYStx9SzyhFmgK>
+
+[Backup](http://book.thuviencanhan.com/ref/factor_analysis/video/)
 
 
 

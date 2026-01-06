@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Duc Nguyen">
-<meta name="dcterms.date" content="2026-01-05">
+<meta name="dcterms.date" content="2026-01-07">
 
-<title>Tài liệu tham khảo - Tổng hợp bài tập factor analysis</title>
+<title>Tài liệu tham khảo - Tổng hợp bài tập factor analysis [draft]</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,6 +44,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,6 +75,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -128,7 +160,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#các-bài-tập-mẫu" id="toc-các-bài-tập-mẫu" class="nav-link active" data-scroll-target="#các-bài-tập-mẫu"><span class="header-section-number">1</span> Các bài tập mẫu</a></li>
   <li><a href="#một-số-định-nghĩa" id="toc-một-số-định-nghĩa" class="nav-link" data-scroll-target="#một-số-định-nghĩa"><span class="header-section-number">2</span> Một số định nghĩa</a></li>
-  <li><a href="#quy-tắc-ký-hiệu" id="toc-quy-tắc-ký-hiệu" class="nav-link" data-scroll-target="#quy-tắc-ký-hiệu"><span class="header-section-number">3</span> Quy tắc ký hiệu</a></li>
+  <li><a href="#thuật-ngữ-mô-hình-bão-hòa-saturated-model" id="toc-thuật-ngữ-mô-hình-bão-hòa-saturated-model" class="nav-link" data-scroll-target="#thuật-ngữ-mô-hình-bão-hòa-saturated-model"><span class="header-section-number">3</span> Thuật ngữ mô hình bão hòa (saturated model)</a></li>
   </ul>
 </nav>
     </div>
@@ -137,12 +169,13 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tổng hợp bài tập factor analysis</h1>
+<h1 class="title">Tổng hợp bài tập factor analysis [draft]</h1>
   <div class="quarto-categories">
     <div class="quarto-category">factor analysis</div>
     <div class="quarto-category">EFA</div>
     <div class="quarto-category">CFA</div>
     <div class="quarto-category">SEM</div>
+    <div class="quarto-category">example</div>
   </div>
   </div>
 
@@ -160,7 +193,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 5, 2026</p>
+      <p class="date">January 7, 2026</p>
     </div>
   </div>
   
@@ -174,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="các-bài-tập-mẫu" class="level1" data-number="1">
 <h1 data-number="1"><span class="header-section-number">1</span> Các bài tập mẫu</h1>
-<p>Example 1</p>
+<p><a href="https://tuhocr.github.io/tailieuthamkhao/posts/factor-analysis-example/example_1/example_1.html">Example 1</a></p>
 </section>
 <section id="một-số-định-nghĩa" class="level1" data-number="2">
 <h1 data-number="2"><span class="header-section-number">2</span> Một số định nghĩa</h1>
@@ -182,11 +215,20 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Biến ngoại sinh</strong> (Exogenous variable) là biến không phụ thuộc vào các biến số trong cùng một phương trình hồi quy. Do đó biến ngoại sinh còn gọi là biến độc lập (Independent variables - IV).</p>
 <p>Nếu chạy trực tiếp trên raw data, ta thu được các hệ số hồi quy <em>unstandardized</em> regression coefficients.</p>
 <p>Nếu scale/standardize raw data, ta thu được các hệ số hồi quy <em>standardized</em> regression coefficients.</p>
-<p>Phân tích về mô hình bão hòa/saturated</p>
-<p><a href="https://stats.oarc.ucla.edu/stata/faq/what-are-the-saturated-and-baseline-models-in-sem/" class="uri">https://stats.oarc.ucla.edu/stata/faq/what-are-the-saturated-and-baseline-models-in-sem/</a></p>
 </section>
-<section id="quy-tắc-ký-hiệu" class="level1" data-number="3">
-<h1 data-number="3"><span class="header-section-number">3</span> Quy tắc ký hiệu</h1>
+<section id="thuật-ngữ-mô-hình-bão-hòa-saturated-model" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Thuật ngữ mô hình bão hòa (saturated model)</h1>
+<p><a href="https://stats.oarc.ucla.edu/stata/faq/what-are-the-saturated-and-baseline-models-in-sem/" class="uri">https://stats.oarc.ucla.edu/stata/faq/what-are-the-saturated-and-baseline-models-in-sem/</a></p>
+<p><strong>Quy tắc ký hiệu</strong></p>
+<p>Below is the diagram of a simple structural equation model.</p>
+<p>The dependent variable is <strong>a latent variable <code>Acad</code></strong> with three <strong>observed indicators</strong>, <strong><code>math</code></strong>, <strong><code>science</code></strong> and <strong><code>socst</code></strong>.</p>
+<p>There are two additional observed variables, the <strong>independent variable <code>female</code></strong> and the <strong>mediator variable <code>read</code></strong>.</p>
+<p>Variables in squares (hình vuông) are observed (manifest variables), biến quan sát.</p>
+<p>Variables in circles are latent, biến tiềm ẩn.</p>
+<p>The small circles with <span class="math inline">\(\varepsilon\)</span> are error terms, residual variances, phần dư.</p>
+<p>Mũi tên thể hiện chiều tác động, ví dụ <code>female</code> (giới tính) tác động đến <code>read</code> (khả năng đọc hiểu), đó là 1 mô hình hồi quy đơn giản (<code>y ~ x</code> hay là <code>read ~ female</code>), khi kiểm định mối quan hệ đường (path regression coefficient) nếu không có ý nghĩa thống kê (hệ số slope <span class="math inline">\(\beta\)</span> có p-value &gt; 0.05) thì không có tác động giữa <code>female</code> và <code>read</code>.</p>
+<p>Ví dụ ta có hình sau:</p>
+<p><a href="s1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="s1.png" class="img-fluid"></a></p>
 
 
 </section>
@@ -724,6 +766,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","loop":false,"closeEffect":"zoom","selector":".lightbox"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
