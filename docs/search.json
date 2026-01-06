@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Tài liệu tham khảo",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nCategories\n\n\n\n\n\n\nTổng hợp tài liệu factor analysis\n\n\nfactor analysis, EFA, CFA, SEM\n\n\n\n\nTổng hợp tài liệu Poisson regression\n\n\nPoisson regression\n\n\n\n\nTổng hợp bài tập factor analysis [draft]\n\n\nfactor analysis, EFA, CFA, SEM, example\n\n\n\n\nExample 1 | SEM [draft]\n\n\nSEM, example\n\n\n\n\nTổng hợp tài liệu logistic regression\n\n\nlogistic regression\n\n\n\n\nHướng dẫn tải bài báo\n\n\ndownload\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nCategories\n\n\n\n\n\n\nTổng hợp tài liệu logistic regression\n\n\nlogistic regression\n\n\n\n\nTổng hợp tài liệu Poisson regression\n\n\nPoisson regression\n\n\n\n\nTổng hợp tài liệu factor analysis\n\n\nfactor analysis, EFA, CFA, SEM\n\n\n\n\nTổng hợp bài tập factor analysis [draft]\n\n\nfactor analysis, EFA, CFA, SEM, example\n\n\n\n\nExample 1 | SEM [draft]\n\n\nSEM, example\n\n\n\n\nHướng dẫn tải bài báo\n\n\ndownload\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -46,20 +46,20 @@
     "href": "posts/factor-analysis/index.html",
     "title": "Tổng hợp tài liệu factor analysis",
     "section": "",
-    "text": "1 Sách\n  \nWatkins, Marley W. 2021. A Step-by-Step Guide to Exploratory Factor Analysis with R and RStudio. Routledge. (Watkins 2021)\nBrown, Timothy A. 2015. Confirmatory Factor Analysis for Applied Research. 2nd ed. Guilford Press. (Brown 2015)\nGana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan. Willey. (Gana and Broc 2019)\n\n\n2 Tài liệu theo package\nPackage piecewiseSEM Book\nPackage lavaangui giúp vẽ sơ đồ SEM Paper\nPackage lavaan\n\n\n3 Video\n\nSEM, CFA, EFA, mediation model https://www.youtube.com/playlist?list=PLzv58M2GAfm4CF5-7GGDYStx9SzyhFmgK\nMultilevel models: Random coefficient and intercept models https://www.youtube.com/playlist?list=PLzv58M2GAfm4CF5-7GGDYStx9SzyhFmgK\n\nBackup\n\n\n\n\n\nReferences\n\nBrown, Timothy A. 2015. Confirmatory Factor Analysis for Applied Research. 2nd ed. Guilford Press. http://book.thuviencanhan.com/ref/factor_analysis/brown_confirmatory_2015.pdf.\n\n\nGana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan. Willey. http://book.thuviencanhan.com/ref/factor_analysis/broc_sem_lavaan_2019.pdf.\n\n\nWatkins, Marley W. 2021. A Step-by-Step Guide to Exploratory Factor Analysis with R and RStudio. Routledge. http://book.thuviencanhan.com/ref/factor_analysis/watkins_efa_2021.pdf."
+    "text": "1 Sách\n  \nWatkins, Marley W. 2021. A Step-by-Step Guide to Exploratory Factor Analysis with R and RStudio. Routledge. (Watkins 2021)\nBrown, Timothy A. 2015. Confirmatory Factor Analysis for Applied Research. 2nd ed. Guilford Press. (Brown 2015)\nGana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan. Willey. (Gana and Broc 2019)\n\n\n2 Tài liệu theo package\nPackage piecewiseSEM Book\nPackage lavaangui giúp vẽ sơ đồ SEM Paper\nPackage lavaan\n\n\n3 Video\n\nSEM, CFA, EFA, mediation model Playlist\nMultilevel models: Random coefficient and intercept models Playlist\n\nBackup\n\n\n\n\n\nReferences\n\nBrown, Timothy A. 2015. Confirmatory Factor Analysis for Applied Research. 2nd ed. Guilford Press. http://book.thuviencanhan.com/ref/factor_analysis/brown_confirmatory_2015.pdf.\n\n\nGana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan. Willey. http://book.thuviencanhan.com/ref/factor_analysis/broc_sem_lavaan_2019.pdf.\n\n\nWatkins, Marley W. 2021. A Step-by-Step Guide to Exploratory Factor Analysis with R and RStudio. Routledge. http://book.thuviencanhan.com/ref/factor_analysis/watkins_efa_2021.pdf."
   },
   {
     "objectID": "posts/logistic-regression/index.html",
     "href": "posts/logistic-regression/index.html",
     "title": "Tổng hợp tài liệu logistic regression",
     "section": "",
-    "text": "Hướng dẫn cách biện luận:\n\nMultinominal logistic regression https://www.youtube.com/playlist?list=PLzv58M2GAfm50X_Twskr1aXaV5qMuIszx\nOrdinal logistic regression https://www.youtube.com/playlist?list=PLzv58M2GAfm7S3CISJGX7FV_6NWs3MG9S\nBinary logistic regression https://www.youtube.com/playlist?list=PLzv58M2GAfm4lp0nhaFSKXvrJzzvH5a-i\n\nBackup"
+    "text": "Hướng dẫn cách biện luận:\n\nMultinominal logistic regression Playlist\nOrdinal logistic regression Playlist\nBinary logistic regression Playlist\n\nBackup"
   },
   {
     "objectID": "posts/poisson-regression/index.html",
     "href": "posts/poisson-regression/index.html",
     "title": "Tổng hợp tài liệu Poisson regression",
     "section": "",
-    "text": "Hướng dẫn cách biện luận:\n\nPoisson regression models https://www.youtube.com/playlist?list=PLzv58M2GAfm6OcHzm2h2UwYsxjghPTsv2\n\nBackup"
+    "text": "Hướng dẫn cách biện luận:\n\nPoisson regression models Playlist\n\nBackup"
   }
 ]

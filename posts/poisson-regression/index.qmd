@@ -9,7 +9,7 @@ categories: [Poisson regression]
 
 Hướng dẫn cách biện luận:
 
-* Poisson regression models <https://www.youtube.com/playlist?list=PLzv58M2GAfm6OcHzm2h2UwYsxjghPTsv2> 
+* Poisson regression models [Playlist](https://www.youtube.com/playlist?list=PLzv58M2GAfm6OcHzm2h2UwYsxjghPTsv2)
 
 [Backup](http://book.thuviencanhan.com/ref/poisson_regression/video/)
 

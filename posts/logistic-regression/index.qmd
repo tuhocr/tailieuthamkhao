@@ -9,11 +9,11 @@ categories: [logistic regression]
 
 Hướng dẫn cách biện luận:
 
-* Multinominal logistic regression <https://www.youtube.com/playlist?list=PLzv58M2GAfm50X_Twskr1aXaV5qMuIszx> 
+* Multinominal logistic regression [Playlist](https://www.youtube.com/playlist?list=PLzv58M2GAfm50X_Twskr1aXaV5qMuIszx)
 
-* Ordinal logistic regression <https://www.youtube.com/playlist?list=PLzv58M2GAfm7S3CISJGX7FV_6NWs3MG9S>
+* Ordinal logistic regression [Playlist](https://www.youtube.com/playlist?list=PLzv58M2GAfm7S3CISJGX7FV_6NWs3MG9S)
 
-* Binary logistic regression <https://www.youtube.com/playlist?list=PLzv58M2GAfm4lp0nhaFSKXvrJzzvH5a-i>
+* Binary logistic regression [Playlist](https://www.youtube.com/playlist?list=PLzv58M2GAfm4lp0nhaFSKXvrJzzvH5a-i)
 
 [Backup](http://book.thuviencanhan.com/ref/logistic_regression/video/)
 

@@ -28,9 +28,9 @@ Package [`lavaan`](https://lavaan.ugent.be/resources/books.html)
 
 # Video
 
-* SEM, CFA, EFA, mediation model <https://www.youtube.com/playlist?list=PLzv58M2GAfm4CF5-7GGDYStx9SzyhFmgK>
+* SEM, CFA, EFA, mediation model [Playlist](https://www.youtube.com/playlist?list=PLzv58M2GAfm4CF5-7GGDYStx9SzyhFmgK)
 
-* Multilevel models: Random coefficient and intercept models  <https://www.youtube.com/playlist?list=PLzv58M2GAfm4CF5-7GGDYStx9SzyhFmgK>
+* Multilevel models: Random coefficient and intercept models [Playlist](https://www.youtube.com/playlist?list=PLzv58M2GAfm45pXXSRo6arevYGjIgKtp4)
 
 [Backup](http://book.thuviencanhan.com/ref/factor_analysis/video/)
 
