@@ -73,16 +73,22 @@ Package [`lavaan`](https://lavaan.ugent.be/resources/books.html)
 
 [Effect Displays in R for Generalised Linear Models](http://book.thuviencanhan.com/ref/factor_analysis/effect-displays-revised.pdf) | [Link](https://www.jstatsoft.org/article/view/v008i15)
 
+## Phân tích Mediation | Simple model
+
 Hamid, Abdalla A. R. M., Abdullah Seif Abdullah Al Miskry, and Abdel Hameed M. Darweesh. 2023. "The Relationship Between Coping and Distress Among Faculty Members and Students During COVID-19 Pandemic Lockdown: The Moderating Effect of Gender." [@hamid_2023]
 
 ::: {.callout-tip title="@hamid_2023" collapse="true"}
 ![The model of the moderating effect of gender on the relationship
-between coping and distress.](m1.png){ width=50% }
+between coping and distress.](m1.png){ width=70% }
 
 Quy trình phân tích mediation với biến `GENDER`
 :::
 
+Zhang, Zhiyong, Fumiaki Hamagami, Kevin J. Grimm, and and John J. McArdle. 2015. "Using r Package RAMpath for Tracing SEM PathDiagrams and Conducting Complex LongitudinalData Analysis." Structural Equation Modeling: A Multidisciplinary Journal. [@zhang_2015]
 
+::: {.callout-tip title="@zhang_2015" collapse="true"}
+![Path diagram for a mediation model](m2.png){ width=100% }
+:::
 
 
 
