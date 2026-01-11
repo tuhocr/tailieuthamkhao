@@ -1,0 +1,23 @@
+---
+title: "Tổng hợp tài liệu xác suất thống kê"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+categories: [statistics]
+
+---
+
+# Kinh tế lượng
+
+• [Hoàng Bá Mạnh](https://www.youtube.com/@EurekaUni/videos)
+
+# Multi level model
+
+https://www.youtube.com/watch?v=TfrnOGS1KQs
+
+
+
+
+
+
+

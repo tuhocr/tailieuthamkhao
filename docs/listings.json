@@ -2,10 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/factor-analysis/index.html",
+      "/posts/statistics/index.html",
+      "/posts/factor-analysis-example/index.html",
       "/posts/logistic-regression/index.html",
       "/posts/poisson-regression/index.html",
-      "/posts/factor-analysis/index.html",
-      "/posts/factor-analysis-example/index.html",
       "/posts/factor-analysis-example/example_1/example_1.html",
       "/posts/download-article/index.html"
     ]

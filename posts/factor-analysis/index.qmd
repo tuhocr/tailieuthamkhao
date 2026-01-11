@@ -34,6 +34,66 @@ Package [`lavaan`](https://lavaan.ugent.be/resources/books.html)
 
 [Backup](http://book.thuviencanhan.com/ref/factor_analysis/video/)
 
+# Giải thích mô hình
+
+::: {.grid}
+
+::: {.g-col-6}
+• [SmartPLS](https://smartpls.com/documentation)
+
+• [Phân tích SPSS](https://phantichspss.com/)
+
+• [Phạm Lộc](https://www.dichvuspss.com/p/sach-thong-ke.html)
+:::
+
+::: {.g-col-6}
+• [Mạnh Hùng](https://ungdung.hotronghiencuu.com/giao-trinh-phan-tich-smartpls-huong-dan-chi-tiet)
+
+• [Xử lý số liệu](https://xulysolieu.info/)
+:::
+
+:::
+
+
+# AMOS
+
+[![](b1.jpg){ height=100px }](https://methods.sagepub.com/book/mono/introduction-to-structural-equation-modeling-using-ibm-spss-statistics-and-amos/toc#_) 
+
+# Phần mềm
+
+• SPSS AMOS 24 [Link](https://dichvuspss.net/download-phan-mem-amos-24-full-crack-tron-doi/) | [Backup](http://book.thuviencanhan.com/ref/program/amos/24/)
+
+• SmartPLS [Playlist](https://www.youtube.com/playlist?list=PLnMJlbz3sefIJoPbCfTDwzOgMKR3IHL5x) | [Mạnh Hùng](https://www.youtube.com/watch?v=I0dFiLLPHN8) | [ThS. Châu Khánh](https://www.youtube.com/watch?v=5xD9gAXZD-Q)
+
+• SEM Stata [Guide](https://www.youtube.com/watch?v=vAbWx29hCmw&t=145s)
+
+# Phân tích Mediation
+
+[mediation: R Package for Causal Mediation Analysis](http://book.thuviencanhan.com/ref/factor_analysis/mediation.pdf)
+
+[Effect Displays in R for Generalised Linear Models](http://book.thuviencanhan.com/ref/factor_analysis/effect-displays-revised.pdf) | [Link](https://www.jstatsoft.org/article/view/v008i15)
+
+Hamid, Abdalla A. R. M., Abdullah Seif Abdullah Al Miskry, and Abdel Hameed M. Darweesh. 2023. "The Relationship Between Coping and Distress Among Faculty Members and Students During COVID-19 Pandemic Lockdown: The Moderating Effect of Gender." [@hamid_2023]
+
+::: {.callout-tip title="@hamid_2023" collapse="true"}
+![The model of the moderating effect of gender on the relationship
+between coping and distress.](m1.png){ width=50% }
+
+Quy trình phân tích mediation với biến `GENDER`
+:::
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -13,6 +13,8 @@ website:
       - text: "Vẽ đồ thị"
         href: https://tuhocr.github.io/vedothi/
       - about.qmd
+      - icon: book
+        href: https://tuhocr.github.io/tailieuthamkhao/thuvien.html
       - icon: house-door-fill
         href: https://www.tuhocr.com/
       - icon: github

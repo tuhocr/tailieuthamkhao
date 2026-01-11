@@ -24,6 +24,8 @@ Nếu scale/standardize raw data, ta thu được các hệ số hồi quy *stan
 
 <https://stats.oarc.ucla.edu/stata/faq/what-are-the-saturated-and-baseline-models-in-sem/>
 
+instrumental variable
+
 **Quy tắc ký hiệu**
 
 Below is the diagram of a simple structural equation model. 
