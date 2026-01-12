@@ -1,5 +1,5 @@
 ---
-title: "Tổng hợp tài liệu về biến điều tiết, biến trung gian, biến tương tác"
+title: "Tài liệu về biến điều tiết, biến trung gian, biến tương tác"
 author: "Duc Nguyen"
 date: last-modified
 lightbox: true
