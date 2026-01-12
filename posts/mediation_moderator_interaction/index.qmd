@@ -13,3 +13,5 @@ categories: [mediation, moderator, interaction]
 [@aiken_west_1991]
 
 [@frazier_2004]
+
+[Diagram](https://tuhocr.github.io/tailieuthamkhao/posts/mediation_moderator_interaction/mediation.drawio.svg)
