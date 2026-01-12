@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Tài liệu tham khảo",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nCategories\n\n\n\n\n\n\nTổng hợp tài liệu factor analysis\n\n\nfactor analysis, EFA, CFA, SEM\n\n\n\n\nTổng hợp tài liệu xác suất thống kê\n\n\nstatistics\n\n\n\n\nTổng hợp bài tập factor analysis [draft]\n\n\nfactor analysis, EFA, CFA, SEM, example\n\n\n\n\nTổng hợp tài liệu logistic regression\n\n\nlogistic regression\n\n\n\n\nTổng hợp tài liệu Poisson regression\n\n\nPoisson regression\n\n\n\n\nExample 1 | SEM [draft]\n\n\nSEM, example\n\n\n\n\nHướng dẫn tải bài báo\n\n\ndownload\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nCategories\n\n\n\n\n\n\nTổng hợp tài liệu về biến điều tiết, biến trung gian, biến tương tác\n\n\nmediation, moderator, interaction\n\n\n\n\nTổng hợp tài liệu factor analysis\n\n\nfactor analysis, EFA, CFA, SEM\n\n\n\n\nPhân tích mediation\n\n\nSEM, example\n\n\n\n\nTổng hợp tài liệu xác suất thống kê\n\n\nstatistics\n\n\n\n\nTổng hợp bài tập factor analysis [draft]\n\n\nfactor analysis, EFA, CFA, SEM, example\n\n\n\n\nTổng hợp tài liệu logistic regression\n\n\nlogistic regression\n\n\n\n\nTổng hợp tài liệu Poisson regression\n\n\nPoisson regression\n\n\n\n\nExample 1 | SEM [draft]\n\n\nSEM, example\n\n\n\n\nHướng dẫn tải bài báo\n\n\ndownload\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -74,6 +74,27 @@
     "href": "posts/factor-analysis/index.html#phân-tích-mediation-simple-model",
     "title": "Tổng hợp tài liệu factor analysis",
     "section": "7.1 Phân tích Mediation | Simple model",
-    "text": "7.1 Phân tích Mediation | Simple model\nHamid, Abdalla A. R. M., Abdullah Seif Abdullah Al Miskry, and Abdel Hameed M. Darweesh. 2023. “The Relationship Between Coping and Distress Among Faculty Members and Students During COVID-19 Pandemic Lockdown: The Moderating Effect of Gender.” (Hamid, Miskry, and Darweesh 2023)\n\n\n\n\n\n\nHamid, Miskry, and Darweesh (2023)\n\n\n\n\n\n\n\n\nThe model of the moderating effect of gender on the relationship between coping and distress.\n\n\nQuy trình phân tích mediation với biến GENDER\n\n\n\nZhang, Zhiyong, Fumiaki Hamagami, Kevin J. Grimm, and and John J. McArdle. 2015. “Using r Package RAMpath for Tracing SEM PathDiagrams and Conducting Complex LongitudinalData Analysis.” Structural Equation Modeling: A Multidisciplinary Journal. (Zhang et al. 2015)\n\n\n\n\n\n\nZhang et al. (2015)\n\n\n\n\n\n\n\n\nPath diagram for a mediation model\n\n\n\n\n\n\n\n\nThe model of the moderating effect of gender on the relationship between coping and distress.\nPath diagram for a mediation model"
+    "text": "7.1 Phân tích Mediation | Simple model\nHamid, Abdalla A. R. M., Abdullah Seif Abdullah Al Miskry, and Abdel Hameed M. Darweesh. 2023. “The Relationship Between Coping and Distress Among Faculty Members and Students During COVID-19 Pandemic Lockdown: The Moderating Effect of Gender.” (Hamid, Miskry, and Darweesh 2023)\n\n\n\n\n\n\nHamid, Miskry, and Darweesh (2023)\n\n\n\n\n\n\n\n\nThe model of the moderating effect of gender on the relationship between coping and distress.\n\n\nQuy trình phân tích mediation với biến GENDER\n\n\n\nZhang, Zhiyong, Fumiaki Hamagami, Kevin J. Grimm, and and John J. McArdle. 2015. “Using r Package RAMpath for Tracing SEM PathDiagrams and Conducting Complex LongitudinalData Analysis.” Structural Equation Modeling: A Multidisciplinary Journal. (Zhang et al. 2015)\n\n\n\n\n\n\nZhang et al. (2015)\n\n\n\n\n\n\n\n\nPath diagram for a mediation model"
+  },
+  {
+    "objectID": "posts/mediation_moderator_interaction/index.html",
+    "href": "posts/mediation_moderator_interaction/index.html",
+    "title": "Tổng hợp tài liệu về biến điều tiết, biến trung gian, biến tương tác",
+    "section": "",
+    "text": "1 Moderating effect\n(Hamid, Miskry, and Darweesh 2023)\n(Aiken 1991)\n(Frazier, Tix, and Barron 2004)\n\n\n\n\n\nReferences\n\nAiken, Leona S. 1991. “Multiple Regression: Testing and Interpreting Interactions.” In. http://book.thuviencanhan.com/ref/mediation/aiken_west_1991.pdf.\n\n\nFrazier, Patricia A., Andrew P. Tix, and Kenneth E. Barron. 2004. “Testing Moderator and Mediator Effects in Counseling Psychology Research.” such. http://book.thuviencanhan.com/ref/mediation/frazier_2004.pdf.\n\n\nHamid, Abdalla A. R. M., Abdullah Seif Abdullah Al Miskry, and Abdel Hameed M. Darweesh. 2023. “The Relationship Between Coping and Distress Among Faculty Members and Students During COVID-19 Pandemic Lockdown: The Moderating Effect of Gender.” http://book.thuviencanhan.com/ref/factor_analysis/hamid_2023.pdf."
+  },
+  {
+    "objectID": "posts/factor-analysis-example/example_2/phan_tich_mediation.html",
+    "href": "posts/factor-analysis-example/example_2/phan_tich_mediation.html",
+    "title": "Phân tích mediation",
+    "section": "",
+    "text": "Nội dung này được tham khảo ở phần 2.6 Model Fitting Using lavaan"
+  },
+  {
+    "objectID": "posts/factor-analysis-example/example_2/phan_tich_mediation.html#phân-tích-theo-kiểu-sem",
+    "href": "posts/factor-analysis-example/example_2/phan_tich_mediation.html#phân-tích-theo-kiểu-sem",
+    "title": "Phân tích mediation",
+    "section": "2.1 Phân tích theo kiểu SEM",
+    "text": "2.1 Phân tích theo kiểu SEM\nBản chất mối quan hệ này, ta có thể phân tích theo kiểu hồi quy tuyến tính để tìm ra tác động của biến age với biến firesev, và đó cũng là một mô hình SEM (về cơ bản SEM là mô hình hồi quy tuyến tính).\nThe package to fit the SEM using covariance-based methods is called lavaan (for LAtent VAriable ANalysis, which we will delve into in a later chapter).\n\nkeeley_formula1 &lt;- 'firesev ~ age'\n\nclass(keeley_formula1)\n\n[1] \"character\"\n\n\n\nkeeley_sem1 &lt;- sem(keeley_formula1, \n                   data = keeley)\n\nsummary(keeley_sem1)\n\nlavaan 0.6-20 ended normally after 1 iteration\n\n  Estimator                                         ML\n  Optimization method                           NLMINB\n  Number of model parameters                         2\n\n  Number of observations                            90\n\nModel Test User Model:\n                                                      \n  Test statistic                                 0.000\n  Degrees of freedom                                 0\n\nParameter Estimates:\n\n  Standard errors                             Standard\n  Information                                 Expected\n  Information saturated (h1) model          Structured\n\nRegressions:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n  firesev ~                                           \n    age               0.060    0.012    4.832    0.000\n\nVariances:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n   .firesev           2.144    0.320    6.708    0.000\n\n\nhttps://tuanvanle.wordpress.com/2011/09/12/c%C6%A1-s%E1%BB%9F-ly-thuy%E1%BA%BFt-c%E1%BB%A7a-mo-hinh-m%E1%BA%A1ng-sem-ph%E1%BA%A7n-1/"
   }
 ]

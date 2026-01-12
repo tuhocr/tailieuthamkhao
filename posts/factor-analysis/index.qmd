@@ -50,6 +50,8 @@ Package [`lavaan`](https://lavaan.ugent.be/resources/books.html)
 • [Mạnh Hùng](https://ungdung.hotronghiencuu.com/giao-trinh-phan-tich-smartpls-huong-dan-chi-tiet)
 
 • [Xử lý số liệu](https://xulysolieu.info/)
+
+• [Phần mềm SmartPLS](https://phanmemsmartpls.com/) Xem chỗ giáo trình
 :::
 
 :::
@@ -91,8 +93,12 @@ Zhang, Zhiyong, Fumiaki Hamagami, Kevin J. Grimm, and and John J. McArdle. 2015.
 :::
 
 
+# Kiểm định giả thuyết nghiên cứu
 
 
+https://tckhyersin.edu.vn/Data/Upload/MagazineArticle/20/3.%20Doan%20Quoc%20Viet%20-%20QLKT%20(24%20-%2032).pdf
+
+![](m3.png)
 
 
 

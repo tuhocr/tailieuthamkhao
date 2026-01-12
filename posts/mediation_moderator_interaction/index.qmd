@@ -1,0 +1,15 @@
+---
+title: "Tổng hợp tài liệu về biến điều tiết, biến trung gian, biến tương tác"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+categories: [mediation, moderator, interaction]
+---
+
+# Moderating effect
+
+[@hamid_2023]
+
+[@aiken_west_1991]
+
+[@frazier_2004]
