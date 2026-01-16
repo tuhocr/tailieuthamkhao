@@ -6,7 +6,7 @@ lightbox: true
 categories: [factor analysis, EFA, CFA, SEM]
 ---
 
-# Sách
+# Sáchaaabbb
 
 [![](watkins_efa_2021.jpg){ height=100px }](http://book.thuviencanhan.com/ref/factor_analysis/watkins_efa_2021.pdf) 
 [![](brown_confirmatory_2015.png){ height=100px }](http://book.thuviencanhan.com/ref/factor_analysis/brown_confirmatory_2015.pdf)

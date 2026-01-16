@@ -2,15 +2,31 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/pratice_dataset/index.html",
+      "/posts/factor_analysis/index.html",
       "/posts/mediation_moderator_interaction/index.html",
-      "/posts/factor-analysis/index.html",
-      "/posts/factor-analysis-example/example_2/phan_tich_mediation.html",
+      "/posts/factor_analysis_example/example_2/phan_tich_mediation.html",
       "/posts/statistics/index.html",
-      "/posts/factor-analysis-example/index.html",
-      "/posts/logistic-regression/index.html",
-      "/posts/poisson-regression/index.html",
-      "/posts/factor-analysis-example/example_1/example_1.html",
-      "/posts/download-article/index.html"
+      "/posts/factor_analysis_example/index.html",
+      "/posts/logistic_regression/index.html",
+      "/posts/poisson_regression/index.html",
+      "/posts/factor_analysis_example/example_1/example_1.html",
+      "/posts/download_article/index.html"
+    ]
+  },
+  {
+    "listing": "/Aindex.html",
+    "items": [
+      "/posts/pratice_dataset/index.html",
+      "/posts/factor_analysis/index.html",
+      "/posts/mediation_moderator_interaction/index.html",
+      "/posts/factor_analysis_example/example_2/phan_tich_mediation.html",
+      "/posts/statistics/index.html",
+      "/posts/factor_analysis_example/index.html",
+      "/posts/logistic_regression/index.html",
+      "/posts/poisson_regression/index.html",
+      "/posts/factor_analysis_example/example_1/example_1.html",
+      "/posts/download_article/index.html"
     ]
   }
 ]

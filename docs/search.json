@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Tài liệu tham khảo",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nCategories\n\n\n\n\n\n\nTài liệu về biến điều tiết, biến trung gian, biến tương tác\n\n\nmediation, moderator, interaction\n\n\n\n\nTổng hợp tài liệu factor analysis\n\n\nfactor analysis, EFA, CFA, SEM\n\n\n\n\nPhân tích mediation\n\n\nSEM, example\n\n\n\n\nTổng hợp tài liệu xác suất thống kê\n\n\nstatistics\n\n\n\n\nTổng hợp bài tập factor analysis [draft]\n\n\nfactor analysis, EFA, CFA, SEM, example\n\n\n\n\nTổng hợp tài liệu logistic regression\n\n\nlogistic regression\n\n\n\n\nTổng hợp tài liệu Poisson regression\n\n\nPoisson regression\n\n\n\n\nExample 1 | SEM [draft]\n\n\nSEM, example\n\n\n\n\nHướng dẫn tải bài báo\n\n\ndownload\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nCategories\n\n\n\n\n\n\n \n\n\n \n\n\n\n\nTổng hợp tài liệu factor analysis\n\n\nfactor analysis, EFA, CFA, SEM\n\n\n\n\nTài liệu về biến điều tiết, biến trung gian, biến tương tác\n\n\nmediation, moderator, interaction\n\n\n\n\nPhân tích mediation\n\n\nSEM, example\n\n\n\n\nTổng hợp tài liệu xác suất thống kê\n\n\nstatistics\n\n\n\n\nTổng hợp bài tập factor analysis [draft]\n\n\nfactor analysis, EFA, CFA, SEM, example\n\n\n\n\nTổng hợp tài liệu logistic regression\n\n\nlogistic regression\n\n\n\n\nTổng hợp tài liệu Poisson regression\n\n\nPoisson regression\n\n\n\n\nExample 1 | SEM [draft]\n\n\nSEM, example\n\n\n\n\nHướng dẫn tải bài báo\n\n\ndownload\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -96,5 +96,89 @@
     "title": "Phân tích mediation",
     "section": "2.1 Phân tích theo kiểu SEM",
     "text": "2.1 Phân tích theo kiểu SEM\nBản chất mối quan hệ này, ta có thể phân tích theo kiểu hồi quy tuyến tính để tìm ra tác động của biến age với biến firesev, và đó cũng là một mô hình SEM (về cơ bản SEM là mô hình hồi quy tuyến tính).\nThe package to fit the SEM using covariance-based methods is called lavaan (for LAtent VAriable ANalysis, which we will delve into in a later chapter).\n\nkeeley_formula1 &lt;- 'firesev ~ age'\n\nclass(keeley_formula1)\n\n[1] \"character\"\n\n\n\nkeeley_sem1 &lt;- sem(keeley_formula1, \n                   data = keeley)\n\nsummary(keeley_sem1)\n\nlavaan 0.6-20 ended normally after 1 iteration\n\n  Estimator                                         ML\n  Optimization method                           NLMINB\n  Number of model parameters                         2\n\n  Number of observations                            90\n\nModel Test User Model:\n                                                      \n  Test statistic                                 0.000\n  Degrees of freedom                                 0\n\nParameter Estimates:\n\n  Standard errors                             Standard\n  Information                                 Expected\n  Information saturated (h1) model          Structured\n\nRegressions:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n  firesev ~                                           \n    age               0.060    0.012    4.832    0.000\n\nVariances:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n   .firesev           2.144    0.320    6.708    0.000\n\n\nhttps://tuanvanle.wordpress.com/2011/09/12/c%C6%A1-s%E1%BB%9F-ly-thuy%E1%BA%BFt-c%E1%BB%A7a-mo-hinh-m%E1%BA%A1ng-sem-ph%E1%BA%A7n-1/"
+  },
+  {
+    "objectID": "posts/download_article/index.html",
+    "href": "posts/download_article/index.html",
+    "title": "Hướng dẫn tải bài báo",
+    "section": "",
+    "text": "https://annas-archive.in/\nhttps://annas-archive.li/\nhttps://annas-archive.se/\nhttps://annas-archive.pm/"
+  },
+  {
+    "objectID": "posts/factor_analysis/index.html",
+    "href": "posts/factor_analysis/index.html",
+    "title": "Tổng hợp tài liệu factor analysis",
+    "section": "",
+    "text": "Watkins, Marley W. 2021. A Step-by-Step Guide to Exploratory Factor Analysis with R and RStudio. Routledge. (Watkins 2021)\nBrown, Timothy A. 2015. Confirmatory Factor Analysis for Applied Research. 2nd ed. Guilford Press. (Brown 2015)\nGana, Kamel, and Guillaume Broc. 2019. Structural Equation Modeling with Lavaan. Willey. (Gana and Broc 2019)"
+  },
+  {
+    "objectID": "posts/factor_analysis/index.html#phân-tích-mediation-simple-model",
+    "href": "posts/factor_analysis/index.html#phân-tích-mediation-simple-model",
+    "title": "Tổng hợp tài liệu factor analysis",
+    "section": "7.1 Phân tích Mediation | Simple model",
+    "text": "7.1 Phân tích Mediation | Simple model\nHamid, Abdalla A. R. M., Abdullah Seif Abdullah Al Miskry, and Abdel Hameed M. Darweesh. 2023. “The Relationship Between Coping and Distress Among Faculty Members and Students During COVID-19 Pandemic Lockdown: The Moderating Effect of Gender.” (Hamid, Miskry, and Darweesh 2023)\n\n\n\n\n\n\nHamid, Miskry, and Darweesh (2023)\n\n\n\n\n\n\n\n\nThe model of the moderating effect of gender on the relationship between coping and distress.\n\n\nQuy trình phân tích mediation với biến GENDER\n\n\n\nZhang, Zhiyong, Fumiaki Hamagami, Kevin J. Grimm, and and John J. McArdle. 2015. “Using r Package RAMpath for Tracing SEM PathDiagrams and Conducting Complex LongitudinalData Analysis.” Structural Equation Modeling: A Multidisciplinary Journal. (Zhang et al. 2015)\n\n\n\n\n\n\nZhang et al. (2015)\n\n\n\n\n\n\n\n\nPath diagram for a mediation model"
+  },
+  {
+    "objectID": "posts/factor_analysis_example/example_1/example_1.html",
+    "href": "posts/factor_analysis_example/example_1/example_1.html",
+    "title": "Example 1 | SEM [draft]",
+    "section": "",
+    "text": "Nội dung này được tham khảo ở phần 2.6 Model Fitting Using lavaan"
+  },
+  {
+    "objectID": "posts/factor_analysis_example/example_1/example_1.html#phân-tích-theo-kiểu-sem",
+    "href": "posts/factor_analysis_example/example_1/example_1.html#phân-tích-theo-kiểu-sem",
+    "title": "Example 1 | SEM [draft]",
+    "section": "2.1 Phân tích theo kiểu SEM",
+    "text": "2.1 Phân tích theo kiểu SEM\nBản chất mối quan hệ này, ta có thể phân tích theo kiểu hồi quy tuyến tính để tìm ra tác động của biến age với biến firesev, và đó cũng là một mô hình SEM (về cơ bản SEM là mô hình hồi quy tuyến tính).\nThe package to fit the SEM using covariance-based methods is called lavaan (for LAtent VAriable ANalysis, which we will delve into in a later chapter).\n\nkeeley_formula1 &lt;- 'firesev ~ age'\n\nclass(keeley_formula1)\n\n[1] \"character\"\n\n\n\nkeeley_sem1 &lt;- sem(keeley_formula1, \n                   data = keeley)\n\nsummary(keeley_sem1)\n\nlavaan 0.6-20 ended normally after 1 iteration\n\n  Estimator                                         ML\n  Optimization method                           NLMINB\n  Number of model parameters                         2\n\n  Number of observations                            90\n\nModel Test User Model:\n                                                      \n  Test statistic                                 0.000\n  Degrees of freedom                                 0\n\nParameter Estimates:\n\n  Standard errors                             Standard\n  Information                                 Expected\n  Information saturated (h1) model          Structured\n\nRegressions:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n  firesev ~                                           \n    age               0.060    0.012    4.832    0.000\n\nVariances:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n   .firesev           2.144    0.320    6.708    0.000\n\n\nhttps://tuanvanle.wordpress.com/2011/09/12/c%C6%A1-s%E1%BB%9F-ly-thuy%E1%BA%BFt-c%E1%BB%A7a-mo-hinh-m%E1%BA%A1ng-sem-ph%E1%BA%A7n-1/"
+  },
+  {
+    "objectID": "posts/factor_analysis_example/example_2/phan_tich_mediation.html",
+    "href": "posts/factor_analysis_example/example_2/phan_tich_mediation.html",
+    "title": "Phân tích mediation",
+    "section": "",
+    "text": "Nội dung này được tham khảo ở phần 2.6 Model Fitting Using lavaan"
+  },
+  {
+    "objectID": "posts/factor_analysis_example/example_2/phan_tich_mediation.html#phân-tích-theo-kiểu-sem",
+    "href": "posts/factor_analysis_example/example_2/phan_tich_mediation.html#phân-tích-theo-kiểu-sem",
+    "title": "Phân tích mediation",
+    "section": "2.1 Phân tích theo kiểu SEM",
+    "text": "2.1 Phân tích theo kiểu SEM\nBản chất mối quan hệ này, ta có thể phân tích theo kiểu hồi quy tuyến tính để tìm ra tác động của biến age với biến firesev, và đó cũng là một mô hình SEM (về cơ bản SEM là mô hình hồi quy tuyến tính).\nThe package to fit the SEM using covariance-based methods is called lavaan (for LAtent VAriable ANalysis, which we will delve into in a later chapter).\n\nkeeley_formula1 &lt;- 'firesev ~ age'\n\nclass(keeley_formula1)\n\n[1] \"character\"\n\n\n\nkeeley_sem1 &lt;- sem(keeley_formula1, \n                   data = keeley)\n\nsummary(keeley_sem1)\n\nlavaan 0.6-20 ended normally after 1 iteration\n\n  Estimator                                         ML\n  Optimization method                           NLMINB\n  Number of model parameters                         2\n\n  Number of observations                            90\n\nModel Test User Model:\n                                                      \n  Test statistic                                 0.000\n  Degrees of freedom                                 0\n\nParameter Estimates:\n\n  Standard errors                             Standard\n  Information                                 Expected\n  Information saturated (h1) model          Structured\n\nRegressions:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n  firesev ~                                           \n    age               0.060    0.012    4.832    0.000\n\nVariances:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)\n   .firesev           2.144    0.320    6.708    0.000\n\n\nhttps://tuanvanle.wordpress.com/2011/09/12/c%C6%A1-s%E1%BB%9F-ly-thuy%E1%BA%BFt-c%E1%BB%A7a-mo-hinh-m%E1%BA%A1ng-sem-ph%E1%BA%A7n-1/"
+  },
+  {
+    "objectID": "posts/factor_analysis_example/index.html",
+    "href": "posts/factor_analysis_example/index.html",
+    "title": "Tổng hợp bài tập factor analysis [draft]",
+    "section": "",
+    "text": "1 Các bài tập mẫu\nExample 1\n\n\n2 Một số định nghĩa\nBiến nội sinh (Endogenous variable) là biến phụ thuộc vào các biến số khác trong cùng một phương trình hồi quy. Do đó biến nội sinh còn gọi là biến phụ thuộc (Dependent variable - DV).\nBiến ngoại sinh (Exogenous variable) là biến không phụ thuộc vào các biến số trong cùng một phương trình hồi quy. Do đó biến ngoại sinh còn gọi là biến độc lập (Independent variables - IV).\nNếu chạy trực tiếp trên raw data, ta thu được các hệ số hồi quy unstandardized regression coefficients.\nNếu scale/standardize raw data, ta thu được các hệ số hồi quy standardized regression coefficients.\n\n\n3 Thuật ngữ mô hình bão hòa (saturated model)\nhttps://stats.oarc.ucla.edu/stata/faq/what-are-the-saturated-and-baseline-models-in-sem/\ninstrumental variable\nQuy tắc ký hiệu\nBelow is the diagram of a simple structural equation model.\nThe dependent variable is a latent variable Acad with three observed indicators, math, science and socst.\nThere are two additional observed variables, the independent variable female and the mediator variable read.\nVariables in squares (hình vuông) are observed (manifest variables), biến quan sát.\nVariables in circles are latent, biến tiềm ẩn.\nThe small circles with \\(\\varepsilon\\) are error terms, residual variances, phần dư.\nMũi tên thể hiện chiều tác động, ví dụ female (giới tính) tác động đến read (khả năng đọc hiểu), đó là 1 mô hình hồi quy đơn giản (y ~ x hay là read ~ female), khi kiểm định mối quan hệ đường (path regression coefficient) nếu không có ý nghĩa thống kê (hệ số slope \\(\\beta\\) có p-value &gt; 0.05) thì không có tác động giữa female và read.\nVí dụ ta có hình sau:"
+  },
+  {
+    "objectID": "posts/logistic_regression/index.html",
+    "href": "posts/logistic_regression/index.html",
+    "title": "Tổng hợp tài liệu logistic regression",
+    "section": "",
+    "text": "Hướng dẫn cách biện luận:\n\nMultinominal logistic regression Playlist\nOrdinal logistic regression Playlist\nBinary logistic regression Playlist\n\nBackup"
+  },
+  {
+    "objectID": "posts/poisson_regression/index.html",
+    "href": "posts/poisson_regression/index.html",
+    "title": "Tổng hợp tài liệu Poisson regression",
+    "section": "",
+    "text": "Hướng dẫn cách biện luận:\n\nPoisson regression models Playlist\n\nBackup"
+  },
+  {
+    "objectID": "posts/pratice_dataset/index.html",
+    "href": "posts/pratice_dataset/index.html",
+    "title": "Tài liệu tham khảo",
+    "section": "",
+    "text": "https://datalemur.com/"
+  },
+  {
+    "objectID": "Aindex.html",
+    "href": "Aindex.html",
+    "title": "Tài liệu tham khảo",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nCategories\n\n\n\n\n\n\n \n\n\n \n\n\n\n\nTổng hợp tài liệu factor analysis\n\n\nfactor analysis, EFA, CFA, SEM\n\n\n\n\nTài liệu về biến điều tiết, biến trung gian, biến tương tác\n\n\nmediation, moderator, interaction\n\n\n\n\nPhân tích mediation\n\n\nSEM, example\n\n\n\n\nTổng hợp tài liệu xác suất thống kê\n\n\nstatistics\n\n\n\n\nTổng hợp bài tập factor analysis [draft]\n\n\nfactor analysis, EFA, CFA, SEM, example\n\n\n\n\nTổng hợp tài liệu logistic regression\n\n\nlogistic regression\n\n\n\n\nTổng hợp tài liệu Poisson regression\n\n\nPoisson regression\n\n\n\n\nExample 1 | SEM [draft]\n\n\nSEM, example\n\n\n\n\nHướng dẫn tải bài báo\n\n\ndownload\n\n\n\n\n\nNo matching items"
   }
 ]
