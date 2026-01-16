@@ -6,7 +6,7 @@ lightbox: true
 categories: [factor analysis, EFA, CFA, SEM]
 ---
 
-# Sáchaaabbb
+# Sách
 
 [![](watkins_efa_2021.jpg){ height=100px }](http://book.thuviencanhan.com/ref/factor_analysis/watkins_efa_2021.pdf) 
 [![](brown_confirmatory_2015.png){ height=100px }](http://book.thuviencanhan.com/ref/factor_analysis/brown_confirmatory_2015.pdf)
@@ -100,7 +100,17 @@ https://tckhyersin.edu.vn/Data/Upload/MagazineArticle/20/3.%20Doan%20Quoc%20Viet
 
 ![](m3.png)
 
+# Cronbach's Alpha
 
+Cách tính Cronbach's alpha khi chỉ có 2 item [@eisinga_2012]
+
+<https://search.r-project.org/CRAN/refmans/splithalfr/html/spearman_brown.html>
+
+<https://www.phamlocblog.com/2017/03/kiem-dinh-do-tin-cay-cronbach-alpha-spss.html>
+
+Phân tích độ tin cậy thang đo
+
+<https://rpubs.com/hauselin/reliabilityanalysis>
 
 
 
