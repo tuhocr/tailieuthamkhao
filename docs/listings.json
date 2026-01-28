@@ -3,6 +3,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/pratice_dataset/index.html",
+      "/posts/text_analysis/index.html",
       "/posts/factor_analysis/index.html",
       "/posts/mediation_moderator_interaction/index.html",
       "/posts/factor_analysis_example/example_2/phan_tich_mediation.html",

@@ -1,0 +1,108 @@
+---
+title: "Các lệnh xử lý chuỗi"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+categories: [text analysis]
+editor_options: 
+  chunk_output_type: console
+---
+
+# Xử lý sở hữu cách
+
+Thực tế là ta sẽ loại bỏ dấu `'s`.
+
+```{r}
+v <- c("electricity's", "it's", "what's")
+
+clean <- gsub(pattern = "'s$", # àm sạch ok
+              replacement = "",
+              x = v)
+
+clean
+```
+
+```{r}
+v <- c("electricity's", "it's", "what's")
+
+clean <- gsub(pattern = "'s\\b", 
+              replacement = "",
+              x = v)
+
+clean
+```
+
+```{r}
+text <- c("electricity's impact on people's life's",
+          "it's is a good idea",
+          "what's",
+          "electricity's")
+
+clean_text <- gsub(pattern = "'s\\b", # cú pháp này mạnh hơn
+                   replacement = "", 
+                   x = text)
+
+clean_text
+```
+
+```{r}
+library(stringr)
+
+clean <- stringr:::str_remove(string = v, 
+                     pattern = "'s$")
+
+clean
+
+clean <- stringr:::str_remove(string = v, 
+                     pattern = "'s\\b")
+
+clean
+
+# lệnh này lọc còn sót chữ [people's], [life's]
+clean <- stringr:::str_remove(string = text, 
+                     pattern = "'s\\b")
+
+clean
+```
+
+
+# Quy trình clean text
+
+chuyển về cùng upper hoặc lower case
+
+clean thô: dùng grep, gsub, which để fix từ
+
+clean ký tự unicode
+
+clean dấu quote
+
+rã token
+
+clean stop word (có thể add thêm word cần loại)
+
+clean synonym
+
+gộp theo topic
+
+xử lý miss spelling
+
+# Sắp xếp thứ tự vector này theo thứ tự vector kia
+
+```{r}
+a <- c("ok", "yes", "happy", "well", "right", "thanks")
+
+b <- c("right", "thanks", "ok", "yes", "well", "happy")
+
+b_sorted_1 <- b[match(a, b)]
+
+b_sorted_2 <- b[order(match(b, a))]
+
+identical(a, b)
+identical(a, b_sorted_1)
+identical(a, b_sorted_2)
+```
+
+
+
+
+
