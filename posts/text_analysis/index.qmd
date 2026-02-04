@@ -102,6 +102,67 @@ identical(a, b_sorted_1)
 identical(a, b_sorted_2)
 ```
 
+# Ghi chữ superscript unicode
+
+`https://wumbo.net/symbols/superscript-two/`
+
+# Lưu ý khi xếp thứ tự
+
+```{r}
+v <- c("Châu Thành", "Cái Răng")
+
+# Khi có dấu
+"Châu Thành" > "Cái Răng"
+"Châu Thành" < "Cái Răng"
+
+# Khi không dấu
+"Chau Thanh" > "Cái Răng"
+"Chau Thanh" < "Cai Rang"
+
+library(stringi)
+f1 <- stri_trans_general(str = "Châu Thành", id = "Latin-ASCII")
+f1
+
+f2 <- stri_trans_general(str = "Cái Răng", id = "Latin-ASCII")
+f2
+
+f1 > f2
+f1 < f2
+
+g <- c(f1,f2)
+```
+
+
+```{r}
+library(dplyr)
+
+df_v <- as.data.frame(v)
+
+df_v
+
+df_v |> dplyr:::arrange(v)
+
+df_g <- as.data.frame(g)
+
+df_g
+
+df_g |> dplyr:::arrange(g) # function này đảo lại vị trí khi có không còn dấu unicode
+```
+
+Kinh nghiệm rút ra: để sắp xếp alphabet chuẩn, ta loại bỏ dấu của từ, rồi mới `arrange`.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

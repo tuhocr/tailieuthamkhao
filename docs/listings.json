@@ -3,6 +3,7 @@
     "listing": "/index.html",
     "items": [
       "/posts/pratice_dataset/index.html",
+      "/posts/poisson_regression/index.html",
       "/posts/text_analysis/index.html",
       "/posts/factor_analysis/index.html",
       "/posts/mediation_moderator_interaction/index.html",
@@ -10,7 +11,6 @@
       "/posts/statistics/index.html",
       "/posts/factor_analysis_example/index.html",
       "/posts/logistic_regression/index.html",
-      "/posts/poisson_regression/index.html",
       "/posts/factor_analysis_example/example_1/example_1.html",
       "/posts/download_article/index.html"
     ]

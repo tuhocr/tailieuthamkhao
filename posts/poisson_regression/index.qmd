@@ -4,7 +4,8 @@ author: "Duc Nguyen"
 date: last-modified
 lightbox: true
 categories: [Poisson regression]
-
+editor_options: 
+  chunk_output_type: console
 ---
 
 Hướng dẫn cách biện luận:
@@ -12,6 +13,135 @@ Hướng dẫn cách biện luận:
 * Poisson regression models [Playlist](https://www.youtube.com/playlist?list=PLzv58M2GAfm6OcHzm2h2UwYsxjghPTsv2)
 
 [Backup](http://book.thuviencanhan.com/ref/poisson_regression/video/)
+
+```{r, echo=FALSE, results='hide'}
+knitr::opts_chunk$set(message = FALSE,  
+                      warning = FALSE)   
+```
+
+
+
+
+```{r}
+library(readxl)
+df <- read_excel("E:/GITHUB/tailieuthamkhao/posts/poisson_regression/pois.xlsx")
+
+df <- as.data.frame(df)
+
+head(df)
+
+library(dplyr)
+
+df |> dplyr:::group_by(GENDER) |> dplyr:::summarise(mean_AGE = mean(AGE),
+                                                    mean_SUM_K = mean(SUM_K),
+                                                    count = n())
+```
+
+
+```{r}
+df$SUM_K <- df$SUM_K + 1
+```
+
+**Vì có nhiều zero nên ta cần cộng thêm 1 để model dễ tính toán**
+
+```{r}
+df |> dplyr:::group_by(GENDER) |> dplyr:::summarise(mean_AGE = mean(AGE),
+                                                    mean_SUM_K = mean(SUM_K),
+                                                    count = n())
+```
+
+
+```{r}
+fit <- glm(SUM_K ~ GENDER + AGE,
+           data = df,
+           family = "poisson")
+
+summary(fit)
+```
+
+
+```{r}
+library(MASS)
+df$SUM_K <- df$SUM_K + 1
+fit.nb <- glm.nb(SUM_K ~ GENDER + AGE,
+                 data = df) 
+
+summary(fit.nb)
+```
+
+```{r}
+library(stargazer)
+
+stargazer::stargazer(fit, 
+                     fit.nb,
+                     type = "text")
+```
+
+$$\text{ln}(\lambda (\text{SUM\_K})) = \beta_0 + \beta_1 \text{GENDER} + \beta_2 \text{AGE}$$ 
+
+**BIỆN LUẬN:**
+
+**`AGE` là biến liên tục**
+
+Biện luận cách 1: The coefficient of `AGE` is $0.11$. When the `AGE` increase 1 unit, the number `SUM_K` counts is expected to increase by a factor of $e^{0.11} = 1.116278$, all else equal (given the other variables are held constant in the model)
+
+Biện luận cách 2:  The coefficient for `AGE` is $0.11$. This means that the expected log count `SUM_K` for a one-unit increase in `AGE` is $0.11$. 
+
+Tiếng Việt: Hệ số của biến `ĐỘ TUỔI` là $0.11$. Khi `ĐỘ TUỔI` tăng 1 đơn vị, thì số đếm `SUM_K` tăng theo 1 tỷ lệ là $e^{0.11} = 1.116278$ đơn vị, trong trường hợp các biến còn lại là hằng số.
+
+
+**`GENDER` là biến phân loại, với `FEMALE` là reference**
+
+This is the estimated Poisson regression coefficient comparing `MALE` to `FEMALE`, 
+
+Biện luận cách 1: The coefficient of `MALE` is $-0.333$, are associated with a **decrease** in mean `SUM_K` by a factor of $e^{-0.333} = 0.7167$. That is, only 71.67% `SUM_K` in `MALE` than `FEMALE`.
+
+Biện luận cách 2: The difference in the logs of expected counts `SUM_K` is expected to be 0.333 unit **decrease** for `MALE` compared to `FEMALE`, while holding the other variables constant in the model.
+
+Biện luận cách 3: The indicator variable `GENDER` compares between `MALE` to `FEMALE`. The expected log count for `MALE` *decrease** by about $-0.333$
+
+Tiếng Việt: Khi xét theo giới tính, thì `MALE` làm giảm trung bình `SUM_K` theo một tỷ lệ 0.7167 so với `FEMALE`. Hay nói cách khác, điểm số `SUM_K` của `MALE` thấp hơn `FEMALE`. 
+
+
+`https://stats.oarc.ucla.edu/r/dae/poisson-regression/`
+
+`https://stats.oarc.ucla.edu/stata/output/poisson-regression/`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

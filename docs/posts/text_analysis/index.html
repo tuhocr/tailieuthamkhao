@@ -176,6 +176,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#xử-lý-sở-hữu-cách" id="toc-xử-lý-sở-hữu-cách" class="nav-link active" data-scroll-target="#xử-lý-sở-hữu-cách"><span class="header-section-number">1</span> Xử lý sở hữu cách</a></li>
   <li><a href="#quy-trình-clean-text" id="toc-quy-trình-clean-text" class="nav-link" data-scroll-target="#quy-trình-clean-text"><span class="header-section-number">2</span> Quy trình clean text</a></li>
   <li><a href="#sắp-xếp-thứ-tự-vector-này-theo-thứ-tự-vector-kia" id="toc-sắp-xếp-thứ-tự-vector-này-theo-thứ-tự-vector-kia" class="nav-link" data-scroll-target="#sắp-xếp-thứ-tự-vector-này-theo-thứ-tự-vector-kia"><span class="header-section-number">3</span> Sắp xếp thứ tự vector này theo thứ tự vector kia</a></li>
+  <li><a href="#ghi-chữ-superscript-unicode" id="toc-ghi-chữ-superscript-unicode" class="nav-link" data-scroll-target="#ghi-chữ-superscript-unicode"><span class="header-section-number">4</span> Ghi chữ superscript unicode</a></li>
+  <li><a href="#lưu-ý-khi-xếp-thứ-tự" id="toc-lưu-ý-khi-xếp-thứ-tự" class="nav-link" data-scroll-target="#lưu-ý-khi-xếp-thứ-tự"><span class="header-section-number">5</span> Lưu ý khi xếp thứ tự</a></li>
   </ul>
 </nav>
     </div>
@@ -325,6 +327,101 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1] TRUE</code></pre>
 </div>
 </div>
+</section>
+<section id="ghi-chữ-superscript-unicode" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Ghi chữ superscript unicode</h1>
+<p><code>https://wumbo.net/symbols/superscript-two/</code></p>
+</section>
+<section id="lưu-ý-khi-xếp-thứ-tự" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Lưu ý khi xếp thứ tự</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>v <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Châu Thành"</span>, <span class="st">"Cái Răng"</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Khi có dấu</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="st">"Châu Thành"</span> <span class="sc">&gt;</span> <span class="st">"Cái Răng"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Châu Thành"</span> <span class="sc">&lt;</span> <span class="st">"Cái Răng"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Khi không dấu</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="st">"Chau Thanh"</span> <span class="sc">&gt;</span> <span class="st">"Cái Răng"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="st">"Chau Thanh"</span> <span class="sc">&lt;</span> <span class="st">"Cai Rang"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stringi)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>f1 <span class="ot">&lt;-</span> <span class="fu">stri_trans_general</span>(<span class="at">str =</span> <span class="st">"Châu Thành"</span>, <span class="at">id =</span> <span class="st">"Latin-ASCII"</span>)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>f1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Chau Thanh"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>f2 <span class="ot">&lt;-</span> <span class="fu">stri_trans_general</span>(<span class="at">str =</span> <span class="st">"Cái Răng"</span>, <span class="at">id =</span> <span class="st">"Latin-ASCII"</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>f2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Cai Rang"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>f1 <span class="sc">&gt;</span> f2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>f1 <span class="sc">&lt;</span> f2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> <span class="fu">c</span>(f1,f2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>df_v <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(v)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>df_v</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           v
+1 Châu Thành
+2   Cái Răng</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>df_v <span class="sc">|&gt;</span> dplyr<span class="sc">:::</span><span class="fu">arrange</span>(v)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           v
+1 Châu Thành
+2   Cái Răng</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>df_g <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(g)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>df_g</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           g
+1 Chau Thanh
+2   Cai Rang</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>df_g <span class="sc">|&gt;</span> dplyr<span class="sc">:::</span><span class="fu">arrange</span>(g) <span class="co"># function này đảo lại vị trí khi có không còn dấu unicode</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>           g
+1   Cai Rang
+2 Chau Thanh</code></pre>
+</div>
+</div>
+<p>Kinh nghiệm rút ra: để sắp xếp alphabet chuẩn, ta loại bỏ dấu của từ, rồi mới <code>arrange</code>.</p>
 
 
 </section>
