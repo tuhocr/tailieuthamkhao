@@ -8,6 +8,52 @@ editor_options:
   chunk_output_type: console
 ---
 
+# Xử lý chuỗi
+
+```{r}
+a <- "learning by doing"
+
+substr(a,
+       start = 2,
+       stop = 5)
+
+# lấy ký tự từ trái qua phải
+substr(a,
+       start = 2,
+       stop = 5)
+
+# lấy từ ký tự vị trí số 2 trở đi 
+substring(a, 
+          first = 2)
+
+# lấy từ phải qua trái
+
+library(stringr)
+
+# lấy ký tự từ trái qua phải
+stringr:::str_sub(a, 
+                  start = 2,
+                  end = 5)  
+
+# bắt đầu với 5 ký tự cuối
+stringr:::str_sub(a, 
+                  start = -5) 
+
+# lấy toàn bộ ký tự (bỏ 5 ký tự cuối)
+stringr:::str_sub(a, 
+                  end = -5) 
+
+# lấy từ ở vị trí thứ 2
+stringr:::word(a,
+               start = 2)
+
+# lấy từ cuối (bên phải qua)
+stringr:::word(a,
+               start = -1)
+```
+
+`https://www.epirhandbook.com/en/new_pages/characters_strings.html`
+
 # Xử lý sở hữu cách
 
 Thực tế là ta sẽ loại bỏ dấu `'s`.

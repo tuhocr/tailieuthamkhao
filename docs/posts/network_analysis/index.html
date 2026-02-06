@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Duc Nguyen">
-<meta name="dcterms.date" content="2026-02-04">
+<meta name="dcterms.date" content="2026-02-06">
 
-<title>Tài liệu tham khảo - Tổng hợp tài liệu Poisson regression</title>
+<title>Tài liệu tham khảo - Tổng hợp tài liệu network analysis</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,40 +21,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -106,35 +72,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
@@ -205,7 +142,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Tổng hợp tài liệu Poisson regression</h1>
+<h1 class="title">Tổng hợp tài liệu network analysis</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Poisson regression</div>
   </div>
@@ -225,7 +162,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 4, 2026</p>
+      <p class="date">February 6, 2026</p>
     </div>
   </div>
   
@@ -237,166 +174,8 @@ window.Quarto = {
 </header>
 
 
-<p>Hướng dẫn cách biện luận:</p>
-<ul>
-<li>Poisson regression models <a href="https://www.youtube.com/playlist?list=PLzv58M2GAfm6OcHzm2h2UwYsxjghPTsv2">Playlist</a></li>
-</ul>
-<p><a href="http://book.thuviencanhan.com/ref/poisson_regression/video/">Backup</a></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"E:/GITHUB/tailieuthamkhao/posts/poisson_regression/pois.xlsx"</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(df)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>  GENDER AGE SUM_K
-1 FEMALE  22    78
-2   MALE  20     0
-3   MALE  20    40
-4   MALE  19    42
-5   MALE  20     0
-6 FEMALE  19    58</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">:::</span><span class="fu">group_by</span>(GENDER) <span class="sc">|&gt;</span> dplyr<span class="sc">:::</span><span class="fu">summarise</span>(<span class="at">mean_AGE =</span> <span class="fu">mean</span>(AGE),</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>                                                    <span class="at">mean_SUM_K =</span> <span class="fu">mean</span>(SUM_K),</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>                                                    <span class="at">count =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 4
-  GENDER mean_AGE mean_SUM_K count
-  &lt;chr&gt;     &lt;dbl&gt;      &lt;dbl&gt; &lt;int&gt;
-1 FEMALE     19.3       35.4    88
-2 MALE       19.9       27.2    63</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>SUM_K <span class="ot">&lt;-</span> df<span class="sc">$</span>SUM_K <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><strong>Vì có nhiều zero nên ta cần cộng thêm 1 để model dễ tính toán</strong></p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">:::</span><span class="fu">group_by</span>(GENDER) <span class="sc">|&gt;</span> dplyr<span class="sc">:::</span><span class="fu">summarise</span>(<span class="at">mean_AGE =</span> <span class="fu">mean</span>(AGE),</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>                                                    <span class="at">mean_SUM_K =</span> <span class="fu">mean</span>(SUM_K),</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>                                                    <span class="at">count =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 4
-  GENDER mean_AGE mean_SUM_K count
-  &lt;chr&gt;     &lt;dbl&gt;      &lt;dbl&gt; &lt;int&gt;
-1 FEMALE     19.3       36.4    88
-2 MALE       19.9       28.2    63</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">glm</span>(SUM_K <span class="sc">~</span> GENDER <span class="sc">+</span> AGE,</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>           <span class="at">data =</span> df,</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">family =</span> <span class="st">"poisson"</span>)</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-glm(formula = SUM_K ~ GENDER + AGE, family = "poisson", data = df)
-
-Coefficients:
-            Estimate Std. Error z value Pr(&gt;|z|)    
-(Intercept)  1.46369    0.24746   5.915 3.32e-09 ***
-GENDERMALE  -0.33307    0.03112 -10.703  &lt; 2e-16 ***
-AGE          0.11037    0.01275   8.658  &lt; 2e-16 ***
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-
-(Dispersion parameter for poisson family taken to be 1)
-
-    Null deviance: 4004.5  on 150  degrees of freedom
-Residual deviance: 3852.7  on 148  degrees of freedom
-AIC: 4550.9
-
-Number of Fisher Scoring iterations: 5</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MASS)</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>SUM_K <span class="ot">&lt;-</span> df<span class="sc">$</span>SUM_K <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>fit.nb <span class="ot">&lt;-</span> <span class="fu">glm.nb</span>(SUM_K <span class="sc">~</span> GENDER <span class="sc">+</span> AGE,</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">data =</span> df) </span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fit.nb)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-Call:
-glm.nb(formula = SUM_K ~ GENDER + AGE, data = df, init.theta = 0.9955253049, 
-    link = log)
-
-Coefficients:
-            Estimate Std. Error z value Pr(&gt;|z|)
-(Intercept)  1.55819    1.40250   1.111    0.267
-GENDERMALE  -0.28457    0.17420  -1.634    0.102
-AGE          0.10613    0.07255   1.463    0.143
-
-(Dispersion parameter for Negative Binomial(0.9955) family taken to be 1)
-
-    Null deviance: 174.85  on 150  degrees of freedom
-Residual deviance: 170.87  on 148  degrees of freedom
-AIC: 1375.4
-
-Number of Fisher Scoring iterations: 1
-
-              Theta:  0.996 
-          Std. Err.:  0.109 
-
- 2 x log-likelihood:  -1367.416 </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stargazer)</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>stargazer<span class="sc">::</span><span class="fu">stargazer</span>(fit, </span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>                     fit.nb,</span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>                     <span class="at">type =</span> <span class="st">"text"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>
-==============================================
-                      Dependent variable:     
-                  ----------------------------
-                             SUM_K            
-                    Poisson       negative    
-                                  binomial    
-                      (1)           (2)       
-----------------------------------------------
-GENDERMALE         -0.333***       -0.285     
-                    (0.031)       (0.174)     
-                                              
-AGE                0.110***        0.106      
-                    (0.013)       (0.073)     
-                                              
-Constant           1.464***        1.558      
-                    (0.247)       (1.403)     
-                                              
-----------------------------------------------
-Observations          151           151       
-Log Likelihood    -2,272.439      -684.708    
-theta                         0.996*** (0.109)
-Akaike Inf. Crit.  4,550.879     1,375.416    
-==============================================
-Note:              *p&lt;0.1; **p&lt;0.05; ***p&lt;0.01</code></pre>
-</div>
-</div>
-<p><span class="math display">\[\text{ln}(\lambda (\text{SUM\_K})) = \beta_0 + \beta_1 \text{GENDER} + \beta_2 \text{AGE}\]</span></p>
-<p><strong>BIỆN LUẬN:</strong></p>
-<p><strong><code>AGE</code> là biến liên tục</strong></p>
-<p>Biện luận cách 1: The coefficient of <code>AGE</code> is <span class="math inline">\(0.11\)</span>. When the <code>AGE</code> increase 1 unit, the number <code>SUM_K</code> counts is expected to increase by a factor of <span class="math inline">\(e^{0.11} = 1.116278\)</span>, all else equal (given the other variables are held constant in the model)</p>
-<p>Biện luận cách 2: The coefficient for <code>AGE</code> is <span class="math inline">\(0.11\)</span>. This means that the expected log count <code>SUM_K</code> for a one-unit increase in <code>AGE</code> is <span class="math inline">\(0.11\)</span>.</p>
-<p>Tiếng Việt: Hệ số của biến <code>ĐỘ TUỔI</code> là <span class="math inline">\(0.11\)</span>. Khi <code>ĐỘ TUỔI</code> tăng 1 đơn vị, thì số đếm <code>SUM_K</code> tăng theo 1 tỷ lệ là <span class="math inline">\(e^{0.11} = 1.116278\)</span> đơn vị, trong trường hợp các biến còn lại là hằng số.</p>
-<p><strong><code>GENDER</code> là biến phân loại, với <code>FEMALE</code> là reference</strong></p>
-<p>This is the estimated Poisson regression coefficient comparing <code>MALE</code> to <code>FEMALE</code>,</p>
-<p>Biện luận cách 1: The coefficient of <code>MALE</code> is <span class="math inline">\(-0.333\)</span>, are associated with a <strong>decrease</strong> in mean <code>SUM_K</code> by a factor of <span class="math inline">\(e^{-0.333} = 0.7167\)</span>. That is, only 71.67% <code>SUM_K</code> in <code>MALE</code> than <code>FEMALE</code>.</p>
-<p>Biện luận cách 2: The difference in the logs of expected counts <code>SUM_K</code> is expected to be 0.333 unit <strong>decrease</strong> for <code>MALE</code> compared to <code>FEMALE</code>, while holding the other variables constant in the model.</p>
-<p>Biện luận cách 3: The indicator variable <code>GENDER</code> compares between <code>MALE</code> to <code>FEMALE</code>. The expected log count for <code>MALE</code> *decrease** by about <span class="math inline">\(-0.333\)</span></p>
-<p>Tiếng Việt: Khi xét theo giới tính, thì <code>MALE</code> làm giảm trung bình <code>SUM_K</code> theo một tỷ lệ 0.7167 so với <code>FEMALE</code>. Hay nói cách khác, điểm số <code>SUM_K</code> của <code>MALE</code> thấp hơn <code>FEMALE</code>.</p>
-<p><code>https://stats.oarc.ucla.edu/r/dae/poisson-regression/</code></p>
-<p><code>https://stats.oarc.ucla.edu/stata/output/poisson-regression/</code></p>
-<p><code>https://stats.oarc.ucla.edu/r/dae/zinb/</code></p>
+<p>https://cytoscape.org/</p>
+<p>https://www.nature.com/articles/s41467-024-55798-3</p>
 
 
 

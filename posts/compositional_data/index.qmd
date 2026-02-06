@@ -1,0 +1,58 @@
+---
+title: "Tổng hợp tài liệu compositional data"
+author: "Duc Nguyen"
+date: last-modified
+lightbox: true
+categories: [Poisson regression]
+editor_options: 
+  chunk_output_type: console
+---
+
+https://www.geo.fu-berlin.de/en/v/soga-r/Advances-statistics/Feature-scales/Intro_compositional_data/index.html
+
+There are a number of methods for compositional data analysis, perhaps check out these reviews: https://www.frontiersin.org/articles/10.3389/fmicb.2017.02224/full https://www.annualreviews.org/doi/full/10.1146/annurev-statistics-010814-020351 http://www.nrcresearchpress.com/doi/full/10.1139/cjm-2015-0821?src=recsys&#.W49SfehKiUk
+
+
+https://compositionaldata.com/material/others/Lecture_notes_11.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

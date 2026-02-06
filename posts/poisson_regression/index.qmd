@@ -107,7 +107,7 @@ Tiếng Việt: Khi xét theo giới tính, thì `MALE` làm giảm trung bình 
 
 `https://stats.oarc.ucla.edu/stata/output/poisson-regression/`
 
-
+`https://stats.oarc.ucla.edu/r/dae/zinb/`
 
 
 
